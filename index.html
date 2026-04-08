@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LC Freq — Company Frequency Tracker for LeetCode</title>
+  <meta name="description"
+    content="See which companies ask each LeetCode problem. A brutally simple browser extension for Chrome & Firefox." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Top Ticker Bar -->
+  <div class="ticker-bar">
+    <span class="ticker-left">LC-TRACKER.EXT</span>
+    <span class="ticker-right">OPEN SOURCE</span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">LC TRACKER<span class="logo-dot">.</span></a>
+      <div class="nav-links">
+        <a href="https://prasanthp.me">KNOW THE DEVELOPER</a>
+        <a href="#features">FEATURES</a>
+        <a href="#preview">PREVIEW</a>
+        <a href="#install">INSTALL</a>
+        <a href="https://github.com/PrasanthPradeep/LeetTracker" target="_blank" rel="noopener"
+          class="nav-btn">GITHUB</a>
+      </div>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#features">FEATURES</a>
+    <a href="#preview">PREVIEW</a>
+    <a href="#install">INSTALL</a>
+    <a href="https://github.com/PrasanthPradeep/LeetTracker" target="_blank" rel="noopener">GITHUB</a>
+  </div>
+
+  <!-- Accent Line -->
+  <div class="accent-line"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">
+        <span class="hero-line-1">KNOW WHICH</span>
+        <span class="hero-line-2"><span class="hero-highlight">COMPANIES</span></span>
+        <span class="hero-line-3">ASK EACH PROBLEM</span>
+      </h1>
+
+      <div class="hero-tags">
+        <span class="tag tag-amber">⚡ BROWSER EXTENSION</span>
+        <span class="tag tag-purple">&lt;/&gt; OPEN SOURCE</span>
+        <span class="tag tag-blue">🔒 PRIVACY FIRST</span>
+        <span class="tag tag-green">🌐 CROSS-BROWSER</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Built By Section -->
+  <section class="built-by-section">
+    <div class="built-by-grid">
+      <div class="built-by-visual">
+        <div class="mock-browser">
+          <div class="mock-browser-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="mock-url">leetcode.com/problems/two-sum</span>
+          </div>
+          <div class="mock-browser-body">
+            <div class="mock-panel">
+              <div class="mock-panel-header">COMPANY FREQUENCY</div>
+              <div class="mock-company"><span class="mock-bar" style="width:90%"></span> Amazon</div>
+              <div class="mock-company"><span class="mock-bar" style="width:80%"></span> Google</div>
+              <div class="mock-company"><span class="mock-bar" style="width:65%"></span> Microsoft</div>
+              <div class="mock-company"><span class="mock-bar" style="width:45%"></span> Meta</div>
+              <div class="mock-company"><span class="mock-bar" style="width:30%"></span> Apple</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="built-by-content">
+        <span class="mono-label">// IDENTITY: DEV_TOOL</span>
+        <h2 class="section-title">BUILT FOR<br><span class="title-highlight">ENGINEERS.</span></h2>
+        <p class="section-text">
+          We aren't a corporation. We are engineers who grind LeetCode just like you.
+          We built this because <span class="text-underline">we needed it just as much as you do.</span>
+        </p>
+        <a href="#install" class="cta-btn" download>
+          <span class="btn-icon">↓</span> DOWNLOAD EXTENSION
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Statement -->
+  <section class="mission-section">
+    <div class="mission-inner">
+      <span class="mono-label mission-label">▌ MISSION_STATEMENT.TXT</span>
+      <div class="mission-grid">
+        <div class="mission-left">
+          <h2 class="mission-title">NOT JUST ANOTHER<br><span class="mission-red">LEETCODE<br>TOOL.</span></h2>
+        </div>
+        <div class="mission-right">
+          <p>Tired of Googling "Two Sum company frequency" in separate tabs?</p>
+          <p><strong>We embed the data right inside LeetCode.</strong> No context switching. No premium subscriptions.
+            Just the info you need, right where you need it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Cards -->
+  <section class="features-section" id="features">
+    <div class="features-grid">
+      <div class="feature-card" style="border-top: 4px solid #fbbf24;">
+        <div class="feature-header">
+          <span class="feature-icon">⚡</span>
+          <span class="feature-number">01</span>
+        </div>
+        <h3 class="feature-title">THE DATA</h3>
+        <p class="feature-text">See which companies have asked each problem, with frequency data from multiple curated
+          sources—updated regularly.</p>
+        <div class="feature-divider"></div>
+        <span class="feature-tag tag-amber">SOURCE: MULTI-DATASET</span>
+      </div>
+
+      <div class="feature-card" style="border-top: 4px solid #ef4444;">
+        <div class="feature-header">
+          <span class="feature-icon">🎯</span>
+          <span class="feature-number">02</span>
+        </div>
+        <h3 class="feature-title">THE PANEL</h3>
+        <p class="feature-text">A clean, dark-mode compatible panel injected directly into the LeetCode problem page. No
+          popups, no new tabs.</p>
+        <div class="feature-divider"></div>
+        <span class="feature-tag tag-red">UI: INLINE</span>
+      </div>
+
+      <div class="feature-card" style="border-top: 4px solid #10b981;">
+        <div class="feature-header">
+          <span class="feature-icon">🔒</span>
+          <span class="feature-number">03</span>
+        </div>
+        <h3 class="feature-title">THE CACHE</h3>
+        <p class="feature-text">All data cached locally. Zero tracking. Zero analytics. Your browsing stays your
+          business.</p>
+        <div class="feature-divider"></div>
+        <span class="feature-tag tag-green">PRIVACY: MAX</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision / Mission Cards -->
+  <section class="vm-section">
+    <div class="vm-grid">
+      <div class="vm-card vm-purple">
+        <div class="vm-icon-box">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <circle cx="12" cy="12" r="6" />
+            <circle cx="12" cy="12" r="2" />
+          </svg>
+        </div>
+        <span class="vm-status">STATUS: ACTIVE</span>
+        <h3 class="vm-title">THE<br>VISION</h3>
+        <p class="vm-text">To give every LeetCode grinder access to company frequency data — for free. No paywalls, no
+          premium tiers, no gatekeeping.</p>
+      </div>
+
+      <div class="vm-card vm-amber">
+        <div class="vm-icon-box">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <circle cx="12" cy="12" r="6" />
+            <circle cx="12" cy="12" r="2" />
+          </svg>
+        </div>
+        <span class="vm-status">PRIORITY: 01</span>
+        <h3 class="vm-title">THE<br>MISSION</h3>
+        <p class="vm-text">To simplify interview prep through a single, trusted extension — delivering company context
+          directly inside LeetCode. No corporate BS.</p>
+      </div>
+    </div>
+
+    <div class="statement-banner">
+      <h2 class="statement-text">NO PREMIUM. JUST <span class="statement-underline">CLARITY.</span></h2>
+    </div>
+  </section>
+
+  <!-- Preview / Screenshots Section -->
+  <section class="preview-section" id="preview">
+    <div class="preview-inner">
+      <span class="mono-label">// UI_GALLERY.MD</span>
+      <h2 class="section-title-center">EXTENSION <span class="title-highlight">PREVIEW</span></h2>
+      <div class="preview-grid">
+        <div class="preview-card">
+          <img src="assets/Screenshot 2026-04-04 003602.png" alt="Extension panel showing company frequency data"
+            loading="lazy" />
+        </div>
+        <div class="preview-card">
+          <img src="assets/Screenshot 2026-04-04 003625.png" alt="Extension panel dark mode view" loading="lazy" />
+        </div>
+        <div class="preview-card">
+          <img src="assets/Screenshot 2026-04-04 003745.png" alt="Extension panel with expanded data" loading="lazy" />
+        </div>
+        <div class="preview-card">
+          <img src="assets/Screenshot 2026-04-04 003816.png" alt="Extension popup interface" loading="lazy" />
+        </div>
+        <div class="preview-card">
+          <img src="assets/Screenshot 2026-04-04 003838.png" alt="Extension settings view" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation Section -->
+  <section class="install-section" id="install">
+    <div class="install-inner">
+      <span class="mono-label">// INSTALLATION_GUIDE.MD</span>
+      <h2 class="section-title-center">GET <span class="title-highlight">STARTED</span></h2>
+
+      <div class="install-grid">
+        <div class="install-card">
+          <div class="install-card-header">
+            <span class="install-icon">🦊</span>
+            <span class="install-badge">FIREFOX</span>
+          </div>
+          <p style="font-family: var(--font-mono); font-size: 0.9rem; line-height: 1.7; margin-bottom: 24px;">
+            Available directly on the Firefox Add-ons store. No manual load required.
+          </p>
+          <a href="https://addons.mozilla.org/addon/leettracker/" target="_blank" rel="noopener" class="cta-btn"
+            style="width: 100%; justify-content: center;">
+            GET FOR FIREFOX
+          </a>
+          <div style="margin-top: 24px;">
+            <div class="install-screenshot">
+              <img src="assets/extension_screenshot_addons.mozilla.org.png" alt="Chrome extensions page"
+                loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <div class="install-card">
+          <div class="install-card-header">
+            <span class="install-icon">🌐</span>
+            <span class="install-badge">CHROME / CHROMIUM</span>
+          </div>
+          <a href="#download" class="cta-btn" style="width: 100%; justify-content: center; margin-bottom: 24px;">
+            DOWNLOAD .ZIP FILE
+          </a>
+          <ol class="install-steps">
+            <li>Extract the downloaded zip file.</li>
+            <li>Open <code>chrome://extensions</code> in your browser.</li>
+            <li>Enable <strong>Developer mode</strong> (toggle at top-right).</li>
+            <li>Click <strong>Load unpacked</strong> and select the extracted folder.</li>
+          </ol>
+          <div class="install-screenshot">
+            <img src="assets/chrome_extensions_screenshot.png" alt="Chrome extensions page" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap & Contribution Section -->
+  <section class="vm-section" id="contribute" style="background: var(--off-white);">
+    <div class="preview-inner">
+      <span class="mono-label" style="text-align: center;">// FUTURE_ROADMAP.TXT</span>
+      <h2 class="section-title-center">WHAT'S <span class="title-highlight">NEXT?</span></h2>
+    </div>
+
+    <div class="vm-grid" style="margin-top: 40px;">
+      <div class="vm-card" style="background: var(--blue); color: var(--white);">
+        <div class="vm-icon-box">
+          <span style="font-size: 1.6rem; color: var(--black);">🚀</span>
+        </div>
+        <span class="vm-status" style="background: var(--black); color: var(--white);">STATUS: BUILDING</span>
+        <h3 class="vm-title">THE<br>ROADMAP</h3>
+        <p class="vm-text">This is just the beginning. We're actively working on new features, enhanced data accuracy,
+          and UI improvements to make your prep even smoother. More updates coming soon!</p>
+      </div>
+
+      <div class="vm-card" style="background: var(--teal); color: var(--white);">
+        <div class="vm-icon-box">
+          <span style="font-size: 1.6rem; color: var(--black);">🤝</span>
+        </div>
+        <span class="vm-status" style="background: var(--black); color: var(--white);">PRIORITY: HIGH</span>
+        <h3 class="vm-title">JOIN<br>FORCES</h3>
+        <p class="vm-text">Are you a LeetCode Premium user or a dev? We need your help to verify data, contribute new
+          interview questions and add new
+          features. Join our open-source initiative and make an impact.</p>
+        <a href="https://github.com/PrasanthPradeep/LeetTracker" target="_blank" rel="noopener" class="cta-btn"
+          style="margin-top: 24px; padding: 12px 24px; font-size: 0.8rem; width: 100%; justify-content: center;">
+          CONTRIBUTE ON GITHUB
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="download">
+    <div class="cta-inner">
+      <h2 class="cta-title">DON'T GRIND <span class="cta-underline">BLIND.</span></h2>
+      <p class="cta-text">Know which companies care about each problem before you solve it.</p>
+      <a href="https://github.com/PrasanthPradeep/LeetTracker/releases" class="cta-btn cta-btn-large" download>
+        <span class="btn-icon">↓</span> DOWNLOAD NOW
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">© 2026</div>
+      <div class="footer-center">LEETCODE COMPANY FREQUENCY EXTENSION</div>
+      <div class="footer-right" style="display: flex; gap: 20px; align-items: center;">
+        <a href="https://github.com/PrasanthPradeep" target="_blank" rel="noopener">DEVELOPER GITHUB</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Right Sidebar -->
+  <div class="sidebar-right">
+    <span>OPEN SOURCE BROWSER EXTENSION →</span>
+  </div>
+
+  <!-- Support Popup Modal -->
+  <div class="support-modal-overlay" id="supportModal">
+    <div class="support-modal">
+      <button class="support-close" id="supportClose">&times;</button>
+      <div class="support-heart">❤️</div>
+      <h3 class="support-title">Loved the Extension?</h3>
+      <p class="support-subtitle">Support us to keep it free!<br>Even ₹1 makes a huge difference ✨</p>
+
+      <div class="support-qr-box">
+        <img src="assets/upi_qrcode.svg" alt="UPI QR Code" class="support-qr">
+      </div>
+      <div class="support-upi">
+        <span class="support-upi-label">UPI ID</span>
+        <div class="support-upi-id">prasanthpradeep@upi</div>
+      </div>
+
+      <div class="support-divider"><span>or</span></div>
+
+      <div class="support-bmc-container">
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+          data-name="bmc-button" data-slug="prasanthp" data-color="#FFDD00" data-emoji="" data-font="Inter"
+          data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000"
+          data-coffee-color="#ffffff"></script>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Support Button -->
+  <button class="floating-support-btn" id="supportBtn">
+    <span class="heart-icon">❤️</span> Support
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
